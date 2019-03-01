@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.opening-top {
+    height: 50%;
+    width: 100%;
+    background-color: #3d3935;
+    z-index: 200;
+    animation: slide-up 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.opening-bottom {
+    height: 50%;
+    width: 100%;
+    background-color: #3d3935;
+    z-index: 200;
+    animation: slide-down 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.letter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeout 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.letter > img {
+    height: 150px;
+}
+
+.intro {
+    background: url('../sandbg.jpg') no-repeat;
+    height: 100%;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(0%);
+    }
+    99% {
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes slide-down {
+    from {
+        transform: translateY(0%);
+    }
+    99% {
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fadeout {
+
+}
