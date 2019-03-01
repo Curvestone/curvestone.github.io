@@ -3,80 +3,89 @@
     padding: 0;
 }
 
-.intro {
-    position: fixed;
+.hero {
+    position: relative;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
 }
 
-.opening-top {
-    height: 50%;
+.opening-slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    background-color: #3d3935;
+    background-color: #D76100;
     z-index: 200;
-    animation: slide-up 2s;
-    animation-delay: 2s;
-    animation-timing-function: ease-in;
+    animation: slide-left 2s ease-in;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
+    display: hidden;
 }
 
-.opening-bottom {
-    height: 50%;
-    width: 100%;
-    background-color: #3d3935;
-    z-index: 200;
-    animation: slide-down 2s;
-    animation-delay: 2s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-
-.letter{
+.logo{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: fadeout 1s;
-    animation-delay: 2s;
+    overflow: hidden;
+    width: 127px;
+    animation: expand-logo 1s ease-in;
+    animation-delay: 1.7s;
     animation-fill-mode: forwards;
 }
 
-.letter > img {
+.logo img {
     height: 150px;
 }
 
-.intro {
-    background: url('../sandbg.jpg') no-repeat;
+.hero {
+    background: url('../sandbg.png') no-repeat;
+    background-size: 120%;
+    background-position: center;
     height: 100%;
 }
 
-@keyframes slide-up {
+.meaning {
+    position: absolute;
+    bottom: 10%;
+}
+
+.dash {
+    border-top: 1px solid white;
+}
+
+.about-us {
+    margin-top: 10px;
+}
+
+@keyframes slide-left {
     from {
-        transform: translateY(0%);
+        transform: translateX(0%);
     }
-    99% {
-        transform: translateY(-100%);
-    }
-    to {
-        opacity: 0;
-        display: none;
+    100% {
+        transform: translateX(-100%);
     }
 }
-@keyframes slide-down {
+
+    @keyframes dissapear {
     from {
-        transform: translateY(0%);
+
     }
-    99% {
-        transform: translateY(100%);
-    }
+
     to {
         opacity: 0;
         display: none;
     }
 }
 
-@keyframes fadeout {
+@keyframes expand-logo {
+    from {
 
+    }
+    to {
+        width: 690px;
+    }
 }
