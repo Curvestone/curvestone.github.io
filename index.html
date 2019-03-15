@@ -1,15 +1,16 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="./favicon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link href="./css/open-iconic-bootstrap.css" rel="stylesheet">
+        <link href="./css/tingle.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
         <title>We are Kukua</title>
     </head>
     <body>
-
-        <header id="header">
+        <header id="header" class="d-none d-md-flex">
             <div class="header-logo">
                 <a href="#intro"><img src="/images/K.png" alt="" title="" /></a>
             </div>
@@ -26,51 +27,345 @@
                 </ul>
             </nav>
         </header>
-
-        <section id="hero">
-                <div class="main-logo">
-                    <img src="/images/logo.png" alt="">
+        <section id="hero" class="d-none d-md-block">
+            <div class="main-logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="tagline">Thought influencers <br /> looking at the big picture.</div>
+            <div class="meaning">Kukua <br>in Swahili meaning 'growth'</div>
+            <div class="email">
+                <hr>
+                <span>curious@wearekukua.com</span>
+            </div>
+        </section>
+        <header id="header-mobile" class="d-block d-md-none">
+            <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-navbar" aria-controls="mobile-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="oi oi-menu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mobile-navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#about-us">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#why-kukua">Why Kukua</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#what-we-do">What we do</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#who-work-with">Who we work with</a></li>
+                        <li class="nav-item"><a class="nav-link" class="last" href="#contact-us">Contact us</a></li>
+                    </ul>
                 </div>
-                <div class="tagline">Thought influencers <br /> looking at the big picture.</div>
-                <div class="meaning">Kukua <br> in Swahili meaning 'growth'</div>
-                <div class="email">
-                    <hr>
-                    <span>curious@wearekukua.com</span>
-                </div>
+            </nav>
+        </header>
+        <section id="hero-mobile" class="d-block d-md-none">
+            <div class="main-logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="tagline">Thought influencers <br /> looking at the big picture.</div>
+            <div class="meaning">Kukua <br>in Swahili meaning 'growth'</div>
+            <div class="email">
+                <hr>
+                <span>curious@wearekukua.com</span>
+            </div>
         </section>
         <section id="about-us">
-            <div class="parallax"></div>
-            <div class="content">
-                <h2>About us</h2>
-                <p>
-                    Kukua provides specialist RI, ESG and Impact advisory to the asset management community, enabling them to navigate what can be a complex space simply.
-                </p>
-                <p>
-                    Part of a wider We Are A Curious Group, Kukua's background is rich in the capital markets, international and political and economics ecosystems. We understand the interaction and impact between all and mobilise all our knowledge and resources to maximise our work.
-                </p>
-                <div class="cta-btn">
-                    <a>
-                        Get in touch
-                    </a>
+            <div class="container-fluid p-0">
+                <div class="parallax-background d-none d-md-block">
+                    <div class="parallax-inner" style="background-image: url('images/960x1080px_455090554.jpg')"></div>
+                </div>
+                <div class="col-lg-6 offset-lg-6 col-md-12 col-sm-12 white-bg">
+                    <div class="vertical-center">
+                        <h2>About us</h2>
+                        <p>
+                            Kukua provides specialist RI, ESG and Impact advisory to the asset management community, enabling them to navigate what can be a complex space simply.
+                        </p>
+                        <p>
+                            Part of a wider We Are A Curious Group, Kukua's background is rich in the capital markets, international and political and economics ecosystems. We understand the interaction and impact between all and mobilise all our knowledge and resources to maximise our work.
+                        </p>
+                        <a class="cta-btn" href="#contact-us">
+                            Get in touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="photos d-block d-md-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 bg-crossroads"></div>
                 </div>
             </div>
         </section>
         <section id="why-kukua">
-
+            <div class="container vertical-center">
+                <h2>Why Kukua?</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6">We bring a diverse skill and knowledge base and our work is centred on a progressive philosophy. It is this distinct thinking that enables us to accelerate the solving of complex challenges enabling our clients to reach new frontiers.</div>
+                    <div class="col-12 col-md-6">Our background is rich in the capital markets, international political and economic ecosystems. We understand the interaction and impact between all and mobilise all our knowledge and resources in our work.</div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">We have a deep understanding of the growing needs of the Investor and Investment Consultant community.</div>
+                    <div class="col-12 col-md-6">We are agile and bridge the complexity, knowledge and implementation gap, enabling our clients to not only meet their RI, ESG and Corporate Responsibility requirements, but also identify where competitive advantages can be yielded.</div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">We minimise our clients’ internal resourcing, whilst ensuring regular engagement with them.</div>
+                    <div class="col-12 col-md-6">We are independent to the investment and operational team, which allows us to be neutral in our work.</div>
+                </div>
+                <div class="row justify-content-center justify-content-md-end">
+                    <a class="cta-btn" href="#contact-us">Get In Touch</a>
+                </div>
+            </div>
         </section>
         <section id="what-we-do">
+            <div class="container vertical-center">
+                <h2>What we do?</h2>
+                <div class="card-deck">
+                    <div class="card mb-4 gray-bg text-center card_1">
+                        <!--<img src="images/361x150px_475057992.jpg"/>-->
+                        <div class="parallax-button">
+                            <div class="parallax-inner back-img" style="background-image: url('images/361x150px_475057992.jpg')"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10 col-md-9">
+                                    RI, ESG and Impact Integration
+                                </div>
+                                <div class="col-2 col-md-3">
+                                    <a href="#" data-content="Test"><img src="images/plus.svg"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 gray-bg text-center card_2">
+                        <!--<img src="images/361x150px_945069472.jpg"/>-->
+                        <div class="parallax-button">
+                            <div class="parallax-inner back-img" style="background-image: url('images/361x150px_945069472.jpg')"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10 col-md-9">
+                                    RI, ESG and Impact Audit
+                                </div>
+                                <div class="col-2 col-md-3">
+                                    <a href="#"><img src="images/plus.svg"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 gray-bg text-center card_3">
+                        <!--<img src="images/361x150px_708817909.jpg"/>-->
+                        <div class="parallax-button">
+                            <div class="parallax-inner back-img" style="background-image: url('images/361x150px_708817909.jpg')"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10 col-md-9">
+                                    Risk Management & Compliance
+                                </div>
+                                <div class="col-2 col-md-3">
+                                    <a href="#"><img src="images/plus.svg"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 gray-bg text-center card_4">
+                        <!--<img src="images/361x150px_559520543.jpg"/>-->
+                        <div class="parallax-button">
+                            <div class="parallax-inner back-img" style="background-image: url('images/361x150px_559520543.jpg')"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10 col-md-9">
+                                    Active Ownership
+                                </div>
+                                <div class="col-2 col-md-3">
+                                    <a href="#"><img src="images/plus.svg"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 gray-bg text-center card_5">
+                        <!--<img src="images/361x150p_755022088.jpg"/>-->
+                        <div class="parallax-button">
+                            <div class="parallax-inner back-img" style="background-image: url('images/361x150p_755022088.jpg')"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10 col-md-9">
+                                    RI, ESG and Impact Portfolio Analysis
+                                </div>
+                                <div class="col-2 col-md-3">
+                                    <a href="#"><img src="images/plus.svg"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 gray-bg text-center card_6">
+                        <!--<img src="images/361x150px_139617653.jpg"/>-->
+                        <div class="parallax-button">
+                            <div class="parallax-inner back-img" style="background-image: url('images/361x150px_139617653.jpg')"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10 col-md-9">
+                                    Other Advisory
+                                </div>
+                                <div class="col-2 col-md-3">
+                                    <a href="#"><img src="images/plus.svg"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div id="card_1_text" class="card-text">
+                <h4 class="header">RI, ESG and Impact Integration</h4>
+                <ul>
+                    <li>Analysis of investment and operations to determine appropriate RI & ESG requirements.</li>
+                    <li>Design and implement customised RI, ESG and or Impact framework, including policies.</li>
+                    <li>Design and implement customised Monitoring & Evaluation model.</li>
+                </ul>
+                <h4 class="header">Why is this important?</h4>
+                <ol>
+                    <li>Enhance investee analysis through the Integration of quantitative and qualitative ESG insights into the investment processes</li>
+                    <li>Mitigate risks, both financially and reputationally.</li>
+                    <li>More effectively perform fiduciary duty.</li>
+                    <li>Compliance against client mandates, as well as any regulatory considerations.</li>
+                    <li>Meet the growing demands from investors, investment consultants and civil society.</li>
+                    <li>Strengthen market position, access new investors and grow AUM.</li>
+                    <li>Alignment to global bodies, such as the PRI and SDGs.</li>
+                </ol>
+            </div>
+            <div id="card_2_text" class="card-text">
+                <h4 class="header">RI, ESG and Impact Audit</h4>
+                <ul>
+                    <li>Audit and review RI, ESG and or Impact frameworks and policies.</li>
+                </ul>
+
+                <h4 class="header">Why is this important?</h4>
+                <ol>
+                    <li>Ensure activities remain fit for purpose, achieving its objectives and mandates, as well as identifying opportunities to ensure it remains ahead of the curve.</li>
+                    <li>Enhance investee analysis through the Integration of quantitative and qualitative ESG insights into the investment processes</li>
+                    <li>Mitigate risks, both financially and reputationally.</li>
+                    <li>More effectively perform fiduciary duty.</li>
+                    <li>Compliance against client mandates, as well as any regulatory considerations.</li>
+                    <li>Meet the growing demands from investors, investment consultants and civil society.</li>
+                    <li>Strengthen market position, access new investors and grow AUM.</li>
+                    <li>Alignment to global bodies, such as the PRI and SDGs.</li>
+                </ol>
+
+            </div>
+            <div id="card_3_text" class="card-text">
+                <h4 class="header">Risk Management & Compliance</h4>
+                <ul>
+                    <li>Identifying RI, ESG and or Impact risks and developing appropriate frameworks and policies to mitigate against them and ensure compliance.</li>
+                </ul>
+
+                <h4 class="header">Why is this important?</h4>
+                <ol>
+                    <li>Enhance investee analysis through the Integration of quantitative and qualitative ESG insights into the investment processes</li>
+                    <li>Mitigate risks, both financially and reputationally.</li>
+                    <li>More effectively perform fiduciary duty.</li>
+                    <li>Compliance against client mandates, as well as any regulatory considerations.</li>
+                    <li>Meet the growing demands from investors, investment consultants and civil society.</li>
+                    <li>Strengthen market position, access new investors and grow AUM.</li>
+                    <li>Alignment to global bodies, such as the PRI and SDGs.</li>
+                </ol>
+
+            </div>
+            <div id="card_4_text" class="card-text">
+                <h4 class="header">Active Ownership</h4>
+                <ul>
+                    <li>Design and integrate customised engagement frameworks, processes, policies and monitoring & evaluation models to strengthen engagement activities.</li>
+                    <li>Design and integrate customised voting and proxy-voting frameworks processes, policies and monitoring & evaluation models to strengthen voting activities.</li>
+                    <li>Conduct corporate engagement activities on behalf of and with its clients.</li>
+                </ul>
+                <h4 class="header">Why is this important?</h4>
+                <ol>
+                    <li>Influence ESG performance and profile of investee to improve its ESG impact.</li>
+                    <li>Effectively represent the best interest of clients.</li>
+                    <li>Mitigate risks, both financially and reputationally.</li>
+                    <li>More effectively perform fiduciary duty.</li>
+                    <li>Compliance against client mandates, as well as any regulatory considerations.</li>
+                    <li>Meet the growing demands from investors, investment consultants and civil society.</li>
+                    <li>Alignment to global bodies, such as the PRI and SDGs.</li>
+                </ol>
+            </div>
+            <div id="card_5_text" class="card-text">
+                <h4 class="header">RI, ESG and Impact Portfolio Analysis</h4>
+                <ul>
+                    <li>Existing or scenario portfolio analysis.</li>
+                    <li>Quantitative and qualitative portfolio Impact foot printing</li>
+                </ul>
+                <h4 class="header">Why is this important?</h4>
+                <ol>
+                    <li>Identify insights to inform future portfolios, or specific asset vehicles.</li>
+                    <li>Enhance understanding and management of exposure risk</li>
+                    <li>Enhance investee analysis through the Integration of quantitative and qualitative ESG insights into the investment processes</li>
+                    <li>More effectively perform fiduciary duty.</li>
+                    <li>Compliance against client mandates, as well as any regulatory considerations.</li>
+                    <li>Meet the growing demands from investors, investment consultants and civil society.</li>
+                    <li>Strengthen market position, access new investors and grow AUM.</li>
+                    <li>Alignment to global bodies, such as the PRI and SDGs.</li>
+                </ol>
+            </div>
+            <div id="card_6_text" class="card-text">
+                <h4 class="header">Other Advisory</h4>
+                <ul>
+                    <li>Reporting, including PRI reporting and reporting assurance.</li>
+                    <li>Customised research.</li>
+                    <li>Governance Affairs.</li>
+                    <li>Regulatory Affairs.</li>
+                    <li>UK Stewardship Statement & Assurance.</li>
+                    <li>UK Modern Slavery Act Statement.</li>
+                    <li>Internal corporate responsibility and culture footprinting.</li>
+                    <li>Investor Relations.</li>
+                    <li>Marketing and communications,</li>
+                    <li>Training & development.</li>
+                    <li>Discretional project work.</li>
+                    <li>Expert Counsel and Committee representation.</li>
+                </ul>
+
+            </div>
         </section>
-        <section id="work-with">
-
+        <section id="who-work-with">
+            <div class="container vertical-center">
+                <h2>Who we work with?</h2>
+                <div class="row">
+                    <div class="col">
+                        We work with a number of leading firms and asset managers encompassing all of the asset classes, from private equity, fixed income to alternatives.
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contact-us">
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 order-md-2 parallax-background d-none d-md-block">
+                        <div class="parallax-inner" style="background-image: url('images/960x1080px_327216158.jpg')"></div>
+                    </div>
+                    <div class="col-md-6 order-md-1 parallax-hack">
+                        <div class="vertical-center">
+                            <h2>Contact us</h2>
+                            <p>Contact us to find out more about our services and how we can be part of your journey</p>
+                            <form>
+                                <input type="text" name="fullname" placeholder="Full Name" />
+                                <input type="text" name="mail" placeholder="E-mail Address" />
+                                <textarea placeholder="Enquiry" name="enquiry"></textarea>
+                                <button type="submit" name="send" class="cta-btn">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
 
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script src="./js/parallax_background.js"></script>
+        <script src="./js/tingle.min.js"></script>
         <script src="./js/script.js" charset="utf-8"></script>
     </body>
 </html>
