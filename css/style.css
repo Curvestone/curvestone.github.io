@@ -304,8 +304,8 @@ a.cta-btn.white-btn {
 
 input, textarea {
     padding: 1em;
-    width: 100%;
-    margin: 1em 0 !important;
+    width: 90%;
+    margin: .7em 0 !important;
 }
 
 #why-kukua {
@@ -426,8 +426,25 @@ h4.header {
     background: #fff;
 }
 
-#contact-us .cta-btn, input, textarea {
+#contact-us p {
+    color: #000;
+    font-size: 1.3em;
+}
+
+#contact-us input, textarea {
     border: 1px solid #d84b25;
+    text-transform: initial;
+    font-family: "ProximaNova", sans-serif;
+}
+
+#contact-us .cta-btn {
+    border: 1px solid #d84b25;
+    margin: .7em 0 !important;
+    padding: 1em 6em;
+}
+
+#contact-us textarea {
+    height: 10em;
 }
 
 #contact-us .container {
