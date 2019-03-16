@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: ProximaNovaXbold;
-    font-weight:  bolder;
+    font-weight:  bold;
     src: url("../fonts/ProximaNovaXbold.otf") format("opentype");
 }
 
@@ -32,8 +32,22 @@ section {
     position: relative;
 }
 
+h2 {
+    margin-bottom: 1em;
+}
+
 a.cta-btn {
     color: #000;
+    margin-top: 2em;
+    padding: 1em 5em;
+    font-size: large;
+}
+
+a.cta-btn.white-btn {
+    color: #fff;
+    border-color: #fff !important;
+    background: transparent !important;
+    font-size: large;
 }
 
 #header {
@@ -56,7 +70,7 @@ a.cta-btn {
 }
 
 #header.scrolled {
-    background: rgba(4,47,66, 0.7);
+    background: rgba(4,47,66, 0.9);
     transition: all 0.5s;
 }
 
@@ -277,10 +291,6 @@ a.cta-btn {
     font-size: 1.2em;
 }
 
-#about-us .cta-btn {
-    margin-top: 17%;
-}
-
 .cta-btn, input, textarea {
     display: inline-block;
     padding: 1em 3em;
@@ -321,8 +331,9 @@ input, textarea {
     font-size: 1.2em;
     position: relative;
     overflow: hidden;
-    background: url('../images/TERRAIN_MAP_WHAT_WE_DO.png') no-repeat bottom right;
-    background-size: 75%;
+    background: url(../images/TERRAIN_MAP_WHAT_WE_DO.png) no-repeat bottom;
+    background-position-x: 200%;
+    background-size: 75%
 }
 
 #what-we-do .card {
@@ -383,7 +394,7 @@ h4.header {
     background: url('../images/shutterstock_127527467.jpg') no-repeat center;
     text-align: center;
     color: #fff;
-    font-size: 2.4em;
+    font-size: 2.5em;
 }
 
 #who-work-with h2 {
