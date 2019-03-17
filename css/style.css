@@ -529,6 +529,11 @@ h4.header {
 }
 
 @media only screen and (max-device-width: 767px) {
+
+    a.cta-btn, fa.cta-btn.white-btn {
+        font-size: medium;
+    }
+
     button:focus {
         outline: none;
     }
