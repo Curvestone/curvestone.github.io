@@ -27,7 +27,7 @@ body {
 }
 
 section {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
 }
@@ -168,7 +168,7 @@ a.cta-btn.white-btn {
     animation-timing-function: linear;
 }
 
-#hero:after, #hero-mobile::after {
+#hero:after {
     content: "";
     top: 0;
     left: 0;
@@ -221,7 +221,7 @@ a.cta-btn.white-btn {
 .meaning {
 
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     color: white;
     font-size: 1.5em;
     width: 166px;
@@ -541,22 +541,34 @@ h4.header {
     nav.navbar {
         top: 0;
         background: transparent;
-        z-index: 1000;
+        z-index: 999;
         color: #fff;
         width: 100vw;
     }
 
-    nav.dark-bg {
-        background: rgba(0,0,0,.5);
+    nav.navbar.navbar-light {
+        color: #042F42;
     }
 
-    .oi-menu {
+    nav.navbar-dark.dark-bg {
+        background: rgba(0,0,0,.8);
+    }
+
+    nav.navbar-light.dark-bg {
+        background: rgba(255,255,255,.8);
+    }
+
+    .navbar-dark .oi-menu {
         color: #fff;
         font-size: 1.2em;
     }
 
-    .navbar-dark .navbar-toggler {
-        color: transparent !important;
+    .navbar-light .oi-menu {
+        color: rgba(0,0,0,.5);
+        font-size: 1.2em;
+    }
+
+    .navbar-dark .navbar-toggler, .navbar-light .navbar-toggler {
         border-color: transparent !important;
         border: none;
         padding-left: 0;
@@ -571,8 +583,10 @@ h4.header {
 
     .main-logo {
         position: absolute;
-        top: 25%;
-        left: 50%;
+        top: 25vh;
+        left: -10% !important;
+        right: 0;
+        text-align: center;
         transform: translate(-50%,0);
         overflow-x: hidden;
         width: 45px;
@@ -585,7 +599,7 @@ h4.header {
 
     .tagline {
         position: absolute;
-        top: 45%;
+        top: 45vh;
         color: white;
         font-size: 2.4em;
         left: 10%;
@@ -654,6 +668,7 @@ h4.header {
 
     #what-we-do {
         height: auto;
+        background: none;
     }
 
     #why-kukua {
@@ -668,6 +683,28 @@ h4.header {
         margin-top: 1em;
         margin-bottom: 1em;
         text-align: center;
+    }
+
+    #who-work-with {
+        font-size: 2em;
+    }
+
+    #who-work-with .cta-btn {
+        margin-top: 4em;
+    }
+
+    #contact-us {
+        text-align: center;
+        height: auto;
+    }
+
+    #contact-us .container-fluid {
+        height: auto;
+        background: #fff;
+    }
+
+    #contact-us .row {
+        height: auto;
     }
 
     #contact-us .parallax-hack {
@@ -695,5 +732,16 @@ h4.header {
 
     .moving-bg {
         display: none;
+    }
+
+    @keyframes expand-logo {
+        from {
+
+        }
+        to {
+            width: auto;
+            left: 0;
+            transform: translate(0,0);
+        }
     }
 }

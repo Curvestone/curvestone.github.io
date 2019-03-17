@@ -23,6 +23,14 @@ $(document).ready(function(){
       animation_type: 'shift',
       animate_duration: 2
   });
+
+  $('section  a.cta-btn[href^="#"]').click(function(){
+    $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+
+    return false;
+  });
 });
 
 var lFollowX = 0,
@@ -86,4 +94,19 @@ $('.card_5').on('click', function(){
 $('.card_6').on('click', function(){
   popup.setContent(document.querySelector('#card_6_text').innerHTML);
   popup.open();
+});
+
+$(function() {
+  var eTop = $('section#about-us').offset().top; //get the offset top of the element
+
+  $(window).scroll(function() { //when window is scrolled
+    //console.log(eTop - $(window).scrollTop());
+    if((eTop - $(window).scrollTop()) < 75 && !$('nav.navbar').hasClass('navbar-light')) {
+      $('nav.navbar').removeClass('navbar-dark').addClass('navbar-light');
+    }
+
+    if((eTop - $(window).scrollTop()) > 75 && $('nav.navbar').hasClass('navbar-light')) {
+      $('nav.navbar').removeClass('navbar-light').addClass('navbar-dark');
+    }
+  });
 });
