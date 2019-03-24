@@ -816,3 +816,9 @@ form.push, p.push, h2.push, h3.push, a.push, img.push, p img.push, div.row.push,
     transform: translateY(0px);
     opacity: 1;
 }
+
+@media (max-width: 540px) {
+    .tingle-modal__closeIcon {
+        font-size: 3rem !important;;
+    }
+}

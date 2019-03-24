@@ -44,10 +44,25 @@ $(document).ready(function(){
       $("a", this.element).addClass('push');
       $("p > img", this.element).addClass('push');
       $("strong", this.element).addClass('push');
-
       $("iframe", this.element).addClass('push');
     }
   }, { offset: '80%' });
+
+  $('.animatemarker').waypoint(function(direction) {
+    if(direction == 'down') {
+      $("h2", this.element).removeClass('push');
+      $("h3", this.element).removeClass('push');
+      $("p", this.element).removeClass('push');
+      $("form", this.element).removeClass('push');
+      $("div.row", this.element).removeClass('push');
+      $("div.card", this.element).removeClass('push');
+      $("img", this.element).removeClass('push');
+      $("a", this.element).removeClass('push');
+      $("p > img", this.element).removeClass('push');
+      $("strong", this.element).removeClass('push');
+      $("iframe", this.element).removeClass('push');
+    }
+  }, { offset: '-150%' });
 
   $('.animatemarker').waypoint(function(direction) {
     if(direction == 'up') {
@@ -62,39 +77,24 @@ $(document).ready(function(){
       $("p > img", this.element).addClass('push');
       $("strong", this.element).addClass('push');
       $("iframe", this.element).addClass('push');
-
     }
-  }, { offset: '-50%' });
+  }, { offset: '-150%' });
 
-  $('.animatemarker').waypoint(function() {
-    $("h2", this.element).removeClass('push');
-    $("h3", this.element).removeClass('push');
-    $("p", this.element).removeClass('push');
-    $("form", this.element).removeClass('push');
-    $("div.row", this.element).removeClass('push');
-    $("div.card", this.element).removeClass('push');
-    $("img", this.element).removeClass('push');
-    $("a", this.element).removeClass('push');
-    $("p > img", this.element).removeClass('push');
-    $("strong", this.element).removeClass('push');
-    $("iframe", this.element).removeClass('push');
-
-  }, { offset: '-60%' });
-
-  $('.animatemarker').waypoint(function() {
-    $("h2", this.element).removeClass('push');
-    $("h3", this.element).removeClass('push');
-    $("p", this.element).removeClass('push');
-    $("form", this.element).removeClass('push');
-    $("div.row", this.element).removeClass('push');
-    $("div.card", this.element).removeClass('push');
-    $("img", this.element).removeClass('push');
-    $("a", this.element).removeClass('push');
-    $("p > img", this.element).removeClass('push');
-    $("strong", this.element).removeClass('push');
-    $("iframe", this.element).removeClass('push');
-
-  }, { offset: '110%' });
+  $('.animatemarker').waypoint(function(direction) {
+    if(direction == 'up') {
+      $("h2", this.element).removeClass('push');
+      $("h3", this.element).removeClass('push');
+      $("p", this.element).removeClass('push');
+      $("form", this.element).removeClass('push');
+      $("div.row", this.element).removeClass('push');
+      $("div.card", this.element).removeClass('push');
+      $("img", this.element).removeClass('push');
+      $("a", this.element).removeClass('push');
+      $("p > img", this.element).removeClass('push');
+      $("strong", this.element).removeClass('push');
+      $("iframe", this.element).removeClass('push');
+    }
+  }, { offset: '80%' });
 });
 
 var lFollowX = 0,
