@@ -818,6 +818,15 @@ form.push, p.push, h2.push, h3.push, a.push, img.push, p img.push, div.row.push,
 
 @media (max-width: 540px) {
     .tingle-modal__closeIcon {
-        font-size: 3rem !important;;
+        font-size: 3.5rem !important;
+        vertical-align: unset !important;
+    }
+
+    .tingle-modal__close {
+        text-align: right;
+    }
+
+    .tingle-modal__closeLabel {
+        display: none;
     }
 }
