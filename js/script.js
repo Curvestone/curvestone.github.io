@@ -49,38 +49,6 @@ $(document).ready(function(){
   }, { offset: '80%' });
 
   $('.animatemarker').waypoint(function(direction) {
-    if(direction == 'down') {
-      $("h2", this.element).removeClass('push');
-      $("h3", this.element).removeClass('push');
-      $("p", this.element).removeClass('push');
-      $("form", this.element).removeClass('push');
-      $("div.row", this.element).removeClass('push');
-      $("div.card", this.element).removeClass('push');
-      $("img", this.element).removeClass('push');
-      $("a", this.element).removeClass('push');
-      $("p > img", this.element).removeClass('push');
-      $("strong", this.element).removeClass('push');
-      $("iframe", this.element).removeClass('push');
-    }
-  }, { offset: '-150%' });
-
-  $('.animatemarker').waypoint(function(direction) {
-    if(direction == 'up') {
-      $("h2", this.element).addClass('push');
-      $("h3", this.element).addClass('push');
-      $("p", this.element).addClass('push');
-      $("form", this.element).addClass('push');
-      $("div.row", this.element).addClass('push');
-      $("div.card", this.element).addClass('push');
-      $("img", this.element).addClass('push');
-      $("a", this.element).addClass('push');
-      $("p > img", this.element).addClass('push');
-      $("strong", this.element).addClass('push');
-      $("iframe", this.element).addClass('push');
-    }
-  }, { offset: '-150%' });
-
-  $('.animatemarker').waypoint(function(direction) {
     if(direction == 'up') {
       $("h2", this.element).removeClass('push');
       $("h3", this.element).removeClass('push');

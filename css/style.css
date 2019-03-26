@@ -151,6 +151,11 @@ a.cta-btn.white-btn {
     padding-right: 0;
 }
 
+.maillink,.maillink:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
 #hero, #hero-mobile {
     position: relative;
     overflow: hidden;
@@ -172,7 +177,7 @@ a.cta-btn.white-btn {
     content: "";
     top: 0;
     left: 0;
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 100%;
     background-color: #D83F0D;
@@ -451,6 +456,16 @@ h4.header {
 
 #contact-us .container {
     z-index: 2;
+}
+
+#contact-us .copyrights {
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+#contact-us .copyrights a{
+    font-weight: bold;
+    color: #000;
 }
 
 @keyframes simple-scale {
