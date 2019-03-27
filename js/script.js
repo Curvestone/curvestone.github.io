@@ -10,10 +10,8 @@ $(document).ready(function(){
   $('.navbar-toggler').on('click', function () {
     if($('.navbar-collapse').hasClass('show')) {
       $('.navbar').removeClass('dark-bg');
-      console.log("1");
     } else {
       $('.navbar').addClass('dark-bg');
-      console.log("0");
     }
   });
 
@@ -30,6 +28,14 @@ $(document).ready(function(){
     }, 1000);
 
     return false;
+  });
+
+  $('.nav-link').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+
+    $('.navbar-collapse').removeClass('show');
   });
 
   $('.animatemarker').waypoint(function(direction) {
