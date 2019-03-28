@@ -545,7 +545,7 @@ h4.header {
   }
 }
 
-@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 990px) and (max-device-width: 1024px) and (orientation: portrait) {
 
     #header hr {
         display: none;
