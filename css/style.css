@@ -317,9 +317,7 @@ input, textarea {
     font-size: 1.2em;
     position: relative;
     overflow: hidden;
-    background: url('../images/TERRAIN_MAP_WHAT_WE_DO.png') no-repeat bottom;
-    background-position-x: 200%;
-    background-size: 75%;
+    background: url('../images/WHY_KUKUA_MAP_NEW.png') no-repeat bottom left;
 }
 
 #why-kukua h2 {
