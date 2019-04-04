@@ -565,7 +565,79 @@ h4.header {
     }
 }
 
+@media only screen and (min-device-width: 990px) and (max-device-width: 1159px) {
+    #header hr {
+        display: none;
+    }
+
+    section#who-work-with, section#why-kukua, section#what-we-do, section#about-us, section#contact-us {
+        width: 100%;
+        height: auto;
+        padding: 3em 0;
+        position: relative;
+    }
+
+    section#about-us, section#contact-us {
+        padding: 0;
+    }
+
+    .vertical-center {
+        top: unset;
+        transform: none;
+    }
+
+    #about-us .white-bg {
+        background: #fff;
+        height: auto;
+        padding: 5em;
+    }
+
+    #contact-us .container-fluid {
+        height: auto;
+        background: #fff;
+    }
+
+    #contact-us .row {
+        height: auto;
+    }
+
+    #contact-us .parallax-hack {
+        padding: 5em;
+        background: #fff;
+    }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 989px) {
+    #header hr {
+        display: none;
+    }
+
+    section#who-work-with, section#why-kukua, section#what-we-do, section#about-us, section#contact-us {
+        width: 100%;
+        height: auto;
+        padding: 3em 0;
+        position: relative;
+    }
+
+    #about-us .parallax-background, #contact-us .parallax-background{
+        display: none !important;
+    }
+
+    #about-us .white-bg {
+        background: #fff;
+        height: 100%;
+        padding: 0 5em 0 5em;
+    }
+
+    #what-we-do {
+        font-size: .8em;
+    }
+
+    .vertical-center {
+        top: unset;
+        transform: none;
+    }
+
     #header hr {
         display: none;
     }
@@ -645,11 +717,17 @@ h4.header {
     }
 
     nav.navbar-light.dark-bg {
-        background: rgba(255,255,255,.8);
+        /*background: rgba(255,255,255,.8);*/
+        background: rgba(4,46,66,.8);
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
     }
 
     .navbar-light .navbar-nav .nav-link {
-        color: #042e42;
+        /*color: #042e42;*/
+        color: #fff;
     }
 
     .navbar-dark .oi-menu {
@@ -660,6 +738,10 @@ h4.header {
     .navbar-light .oi-menu {
         color: #042e42;
         font-size: 1.2em;
+    }
+
+    .navbar-light.dark-bg .oi-menu {
+        color: #fff;
     }
 
     .navbar-dark .navbar-toggler, .navbar-light .navbar-toggler {
