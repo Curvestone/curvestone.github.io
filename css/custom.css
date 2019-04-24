@@ -1,0 +1,42 @@
+/*! Place your custom styles here */
+.btn--primary, .btn--primary:visited {
+    background: #f04965;
+    border-color: #f04965;
+}
+
+.btn--primary:hover {
+    background: #f0687e;
+}
+
+.color--primary {
+    color: #f04965 !important;
+}
+
+.purplebg {
+    background: #392e56;
+    color: #fff;
+}
+
+.bluebg {
+    background: #0e94ad;
+}
+
+.feature h4 + p {
+    max-width: unset;
+    padding: 0 2em;
+}
+
+footer .logo {
+    max-height: 2.5em;
+    vertical-align: text-bottom;
+}
+
+.col-md-6 form {
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    form .col-md-5 {
+        margin: 0 auto;
+    }
+}
