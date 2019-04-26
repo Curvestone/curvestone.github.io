@@ -26,6 +26,10 @@
     padding: 0 2em;
 }
 
+.svg-icon {
+    padding: 3em 6em;
+}
+
 footer .logo {
     max-height: 2.5em;
     vertical-align: text-bottom;
